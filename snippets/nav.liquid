@@ -1,0 +1,119 @@
+<header class="nav_component">
+      <div class="nav_padding">
+        <div class="nav_wrapper">
+          <a href="{{ routes.root_url }}" aria-current="page" class="nav_logo w-inline-block w--current"><img src="{{ 'palm-black.png' | asset_url }}" loading="lazy" alt="" class="nav_logo-icon"></a>
+          <nav class="nav-menu_component">
+            <ul role="list" class="nav-menu_list">
+              <li class="nav-menu_item">
+                <a href="{{ routes.root_url }}" aria-current="page" class="nav-menu_link w--current">{{ 't2268ff' | t }}</a>
+              </li>
+            </ul>
+            {%- render "categories_where_name_eq_all_products" -%}
+            <div data-node-type="commerce-cart-wrapper" data-wf-cart-type="rightSidebar" data-wf-cart-query="" data-wf-page-link-href-prefix="" class="w-commerce-commercecartwrapper nav-menu_cart" udy-collection="cart">
+              <a href="#" data-node-type="commerce-cart-open-link" class="w-commerce-commercecartopenlink nav-menu_cart-button w-inline-block">
+                <div class="text-style-nav">{{ 't1fef40' | t }}</div>
+                <div class="w-commerce-commercecartopenlinkcount nav-menu_cart-quantity">{{ cart.item_count }}</div>
+              </a>
+              <div data-node-type="commerce-cart-container-wrapper" style="display:none" class="w-commerce-commercecartcontainerwrapper w-commerce-commercecartcontainerwrapper--cartType-rightSidebar nav-cart_drawer">
+                <div data-node-type="commerce-cart-container" class="w-commerce-commercecartcontainer nav-cart_container">
+                  <div class="w-commerce-commercecartheader nav-cart_title">
+                    <div class="nav-cart_title-align">
+                      <h3>{{ 't1fef40' | t }}</h3>
+                      <a href="#" data-node-type="commerce-cart-close-link" class="w-commerce-commercecartcloselink nav-cart_close w-inline-block"><img src="{{ 'close-button.svg' | asset_url }}" loading="lazy" alt="Close icon" class="nav-cart_close-icon"></a>
+                    </div><svg class="icon" width="16px" height="16px" viewBox="0 0 16 16">
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g fill-rule="nonzero" fill="#333333">
+                          <polygon points="6.23223305 8 0.616116524 13.6161165 2.38388348 15.3838835 8 9.76776695 13.6161165 15.3838835 15.3838835 13.6161165 9.76776695 8 15.3838835 2.38388348 13.6161165 0.616116524 8 6.23223305 2.38388348 0.616116524 0.616116524 2.38388348 6.23223305 8"></polygon>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="w-commerce-commercecartformwrapper nav-cart_form">
+                    <form data-node-type="commerce-cart-form" style="display:none" class="w-commerce-commercecartform nav-cart_filled">
+                      <script type="text/x-wf-template" id="wf-template-c5bb4541-7c2e-1c40-756a-318bec1d7fd1"><div data-node-type="cart-item" class="nav-cart_item w-commerce-commercecartitem" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d7fd2"><div class="nav-cart_left" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d7fd3"><img data-node-type="cart-item-image" class="nav-cart_image w-commerce-commercecartitemimage" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d7fd4" src="<%= it.image %>"></div><div class="nav-cart_right" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d7fd5"><div data-node-type="cart-item-info" class="nav-cart_top w-commerce-commercecartiteminfo" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d7fd6"><div data-node-type="cart-product-name" class="heading-small uppercase w-commerce-commercecartproductname" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d7fd7"><%= it.title %></div><div class="heading-small uppercase" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d7fd8"><%= it.price %></div></div><ul class="nav-cart_option-list w-commerce-commercecartoptionlist" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d7fd9"><% Object.entries(it.properties).forEach( data =>  { %><li data-node-type="cart-option-list-item" class="nav-cart_option" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d7fda"><span data-node-type="cart-option-list-item-label" class="text-size-regular" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d7fdb"><%= data[0] %></span><span id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d7fdc">: </span><span data-node-type="cart-option-list-item-value" class="text-size-regular" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d7fde"><%= data[1] %></span></li><% }) %></ul><div class="nav-cart_bottom" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d7fdf"><div class="heading-small uppercase" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d7fe0">QTy</div><div data-node-type="cart-item-info" class="nav-cart_align w-commerce-commercecartiteminfo" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d7fe2"><input class="w-commerce-commercecartquantity nav-cart_quantity" name="<%= it.id %>" type="number" min="0" min="1" value="<%= it.quantity %>" data-node-type="cart-quantity"><a data-node-type="cart-remove-link" class="nav-cart_remove" href="#" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d7fe4" data-product-id="<%= it.id %>"><div class="heading-small text-color-grey" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d7fe5">Remove</div></a></div></div></div></div></script>
+                      <div class="w-commerce-commercecartlist nav-cart_list" data-wf-collection="database.commerceOrder.userItems" data-wf-template-id="wf-template-c5bb4541-7c2e-1c40-756a-318bec1d7fd1"></div>
+                      <div class="w-commerce-commercecartfooter cart-footer">
+                        <div class="w-commerce-commercecartlineitem cart-line-item">
+                          <div class="heading-small uppercase">{{ 'tn76f396dc' | t }}</div>
+                          <div class="w-commerce-commercecartordervalue heading-small">{{ cart.items_subtotal_price | money }}</div>
+                        </div>
+                        <div>
+                          <div data-node-type="commerce-cart-quick-checkout-actions">{{ content_for_additional_checkout_buttons }}</div>
+                          <a href="/checkout" value="Checkout" data-node-type="cart-checkout-button" class="w-commerce-commercecartcheckoutbutton button" data-loading-text="Hang Tight...">{{ 't5f75b166' | t }}</a>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="w-commerce-commercecartemptystate">
+                      <div>{{ 't3d503d2b' | t }}</div>
+                    </div>
+                    <div style="display:none" data-node-type="commerce-cart-error" class="w-commerce-commercecarterrorstate error-state">
+                      <div class="error-message w-cart-error-msg" data-w-cart-quantity-error="Product is not available in this quantity." data-w-cart-general-error="Something went wrong when adding this item to the cart." data-w-cart-checkout-error="Checkout is disabled on this site." data-w-cart-cart_order_min-error="The order minimum was not met. Add more items to your cart to continue." data-w-cart-subscription_error-error="Before you purchase, please use your email invite to verify your address so we can send order updates.">{{ 'tn1c765d0d' | t }}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="nav_wrapper-mobile">
+          <div class="nav-mobile_top">
+            <a href="{{ routes.root_url }}" aria-current="page" class="nav-mobile_logo w-inline-block w--current"><img src="{{ 'palm-black.png' | asset_url }}" loading="lazy" alt="" class="nav-mobile_logo-icon"></a>
+            <div class="nav-mobile_right">
+              <div data-node-type="commerce-cart-wrapper" data-wf-cart-type="rightSidebar" data-wf-cart-query="" data-wf-page-link-href-prefix="" class="w-commerce-commercecartwrapper nav-mobile_cart" udy-collection="cart">
+                <a href="#" data-node-type="commerce-cart-open-link" class="w-commerce-commercecartopenlink nav-mobile_cart-button w-inline-block">
+                  <div class="text-style-nav">{{ 't1fef40' | t }}</div>
+                  <div class="w-commerce-commercecartopenlinkcount nav-mobile_cart-quantity">{{ cart.item_count }}</div>
+                </a>
+                <div data-node-type="commerce-cart-container-wrapper" style="display:none" class="w-commerce-commercecartcontainerwrapper w-commerce-commercecartcontainerwrapper--cartType-rightSidebar nav-cart_drawer">
+                  <div data-node-type="commerce-cart-container" class="w-commerce-commercecartcontainer nav-cart_container">
+                    <div class="w-commerce-commercecartheader nav-cart_title">
+                      <div class="nav-cart_title-align">
+                        <h3>{{ 't1fef40' | t }}</h3>
+                        <a href="#" data-node-type="commerce-cart-close-link" class="w-commerce-commercecartcloselink nav-cart_close w-inline-block"><img src="{{ 'close-button.svg' | asset_url }}" loading="lazy" alt="Close icon" class="nav-cart_close-icon"></a>
+                      </div><svg class="icon" width="16px" height="16px" viewBox="0 0 16 16">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g fill-rule="nonzero" fill="#333333">
+                            <polygon points="6.23223305 8 0.616116524 13.6161165 2.38388348 15.3838835 8 9.76776695 13.6161165 15.3838835 15.3838835 13.6161165 9.76776695 8 15.3838835 2.38388348 13.6161165 0.616116524 8 6.23223305 2.38388348 0.616116524 0.616116524 2.38388348 6.23223305 8"></polygon>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="w-commerce-commercecartformwrapper nav-cart_form">
+                      <form data-node-type="commerce-cart-form" style="display:none" class="w-commerce-commercecartform nav-cart_filled">
+                        <script type="text/x-wf-template" id="wf-template-c5bb4541-7c2e-1c40-756a-318bec1d8010"><div data-node-type="cart-item" class="nav-cart_item w-commerce-commercecartitem" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d8011"><div class="nav-cart_left" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d8012"><img data-node-type="cart-item-image" class="nav-cart_image w-commerce-commercecartitemimage" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d8013" src="<%= it.image %>"></div><div class="nav-cart_right" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d8014"><div data-node-type="cart-item-info" class="nav-cart_top w-commerce-commercecartiteminfo" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d8015"><div data-node-type="cart-product-name" class="heading-small uppercase w-commerce-commercecartproductname" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d8016"><%= it.title %></div><div class="heading-small uppercase" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d8017"><%= it.price %></div></div><ul class="nav-cart_option-list w-commerce-commercecartoptionlist" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d8018"><% Object.entries(it.properties).forEach( data =>  { %><li data-node-type="cart-option-list-item" class="nav-cart_option" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d8019"><span data-node-type="cart-option-list-item-label" class="text-size-regular" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d801a"><%= data[0] %></span><span id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d801b">: </span><span data-node-type="cart-option-list-item-value" class="text-size-regular" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d801d"><%= data[1] %></span></li><% }) %></ul><div class="nav-cart_bottom" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d801e"><div class="heading-small uppercase" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d801f">QTy</div><div data-node-type="cart-item-info" class="nav-cart_align w-commerce-commercecartiteminfo" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d8021"><input class="w-commerce-commercecartquantity nav-cart_quantity" name="<%= it.id %>" type="number" min="0" min="1" value="<%= it.quantity %>" data-node-type="cart-quantity"><a data-node-type="cart-remove-link" class="nav-cart_remove" href="#" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d8023" data-product-id="<%= it.id %>"><div class="heading-small text-color-grey" id="" template-part-bind="c5bb4541-7c2e-1c40-756a-318bec1d8024">Remove</div></a></div></div></div></div></script>
+                        <div class="w-commerce-commercecartlist nav-cart_list" data-wf-collection="database.commerceOrder.userItems" data-wf-template-id="wf-template-c5bb4541-7c2e-1c40-756a-318bec1d8010"></div>
+                        <div class="w-commerce-commercecartfooter cart-footer">
+                          <div class="w-commerce-commercecartlineitem cart-line-item">
+                            <div class="heading-small uppercase">{{ 'tn76f396dc' | t }}</div>
+                            <div class="w-commerce-commercecartordervalue heading-small">{{ cart.items_subtotal_price | money }}</div>
+                          </div>
+                          <div>
+                            <div data-node-type="commerce-cart-quick-checkout-actions">{{ content_for_additional_checkout_buttons }}</div>
+                            <a href="/checkout" value="Checkout" data-node-type="cart-checkout-button" class="w-commerce-commercecartcheckoutbutton button" data-loading-text="Hang Tight...">{{ 't5f75b166' | t }}</a>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="w-commerce-commercecartemptystate">
+                        <div>{{ 't3d503d2b' | t }}</div>
+                      </div>
+                      <div style="display:none" data-node-type="commerce-cart-error" class="w-commerce-commercecarterrorstate error-state-2">
+                        <div class="w-cart-error-msg" data-w-cart-quantity-error="Product is not available in this quantity." data-w-cart-general-error="Something went wrong when adding this item to the cart." data-w-cart-checkout-error="Checkout is disabled on this site." data-w-cart-cart_order_min-error="The order minimum was not met. Add more items to your cart to continue." data-w-cart-subscription_error-error="Before you purchase, please use your email invite to verify your address so we can send order updates.">{{ 'tn1c765d0d' | t }}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-w-id="c5bb4541-7c2e-1c40-756a-318bec1d803a" class="nav-mobile_open-menu"><img src="{{ 'menu.svg' | asset_url }}" loading="lazy" alt="Mobile menu icon" class="nav-mobile_open-icon"></div>
+            </div>
+          </div>
+          <div class="nav-mobile_component">
+            <ul role="list" class="nav-mobile_list">
+              <li class="nav-mobile_item">
+                <a href="{{ routes.root_url }}" aria-current="page" class="nav-menu_link-copy w--current">{{ 't2268ff' | t }}</a>
+              </li>
+            </ul>
+            {%- render "categories_where_name_eq_all_products_number_0" -%}
+          </div>
+        </div>
+      </div>
+    </header>

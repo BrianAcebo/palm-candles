@@ -1,0 +1,39 @@
+<footer class="footer_component">
+      <section class="section-newsletter">
+        <div data-w-id="84d24732-74a2-1743-c5db-98c2f55245ab" class="newsletter_component">
+          <div class="newsletter_heading">
+            <h2 class="heading">{{ 't5685176a' | t }}<br>{{ 'tn47761f27' | t }}</h2>
+          </div>
+          <div class="newsletter_form w-form">
+            {%- form "contact",  class: "newsletter_subscribe-form" -%}
+              <div class="newsletter_form-wrapper"><input type="email" class="newsletter_form-input w-input" maxlength="256" name="contact[email]" data-name="Subscriber Email 2" placeholder="Email Address" id="Subscriber-Email-2" required=""><input type="submit" value="" data-wait="" class="submit-button w-button"></div>
+            {%- assign form_success = form.posted_successfully? -%}{%- assign form_errors = form.errors -%}{%- render "form-general-script", form_success: form_success, form_errors: form_errors -%}{%- endform -%}
+            <div class="newsletter_success-message w-form-done  {% if form_success %}form-posted-successfully{% endif %}">
+              <div class="div-block">{{ 't5a0ea5a1' | t }}</div>
+            </div>
+            {%- unless form_success -%}<div class="newsletter_error-message w-form-fail  {% if form.errors %}form-has-errors{% endif %}">
+              <div>{%- render "form-errors", form_errors: form_errors -%}</div>
+            </div>{%- endunless -%}
+          </div>
+        </div>
+      </section>
+      <div class="footer-icons_component">
+        <div class="footer-icons_individual"><img src="{{ 'secure.svg' | asset_url }}" loading="lazy" alt="Secure icon" class="footer-icons_image">
+          <p class="text-size-medium">{{ 'tn2cfed9a3' | t }}</p>
+        </div>
+        <div class="footer-icons_individual"><img src="{{ 'shipping.svg' | asset_url }}" loading="lazy" alt="Package icon" class="footer-icons_image">
+          <p class="text-size-medium">{{ 't31c6b4e2' | t }}</p>
+        </div>
+        <div class="footer-icons_individual"><img src="{{ 'support.svg' | asset_url }}" loading="lazy" alt="Chat support icon" class="footer-icons_image">
+          <p class="text-size-medium">{{ 't6426ed39' | t }}</p>
+        </div>
+      </div>
+      <div class="page-padding"></div>
+      <div class="footer-bottom_wrapper">
+        <div class="page-padding">
+          <div class="footer-bottom_align">
+            <p class="text-size-regular">{{ 'tn5f51c36b' | t }}</p>
+          </div>
+        </div>
+      </div>
+    </footer>

@@ -1,0 +1,60 @@
+{
+  "t2268ff": "Home",
+  "t1fef40": "Cart",
+  "tn76f396dc": "Subtotal",
+  "t5f75b166": "Checkout",
+  "t3d503d2b": "No items found.",
+  "tn1c765d0d": "Product is not available in this quantity.",
+  "t5685176a": "Join our ",
+  "tn47761f27": "Newsletter",
+  "t5a0ea5a1": "Thank you! Your submission has been received!",
+  "tn2cfed9a3": "Secure Payment",
+  "t31c6b4e2": "Free Shipping",
+  "t6426ed39": "24/7 Support",
+  "tn5f51c36b": "© 2022 Palm Candles, Inc. All rights reserved.",
+  "t592e4bec": "Your favorite smells monthly",
+  "tn316069f": "Enjoy the beautiful smells of handcrafted soy candles with a monthly subscription service.",
+  "tn10d26d54": "Shop Now",
+  "t3046cea0": "Spring Rose-Wood & Tobac-Palm Husk-",
+  "tn5d0ca1c3": "How It Works",
+  "t2918537b": "1. Create an account",
+  "t7169d8b4": "2. Pick your candles",
+  "t494e7451": "3. Enjoy the smells",
+  "tn3f6bafe5": "4. Reuse your kit",
+  "t45743bdc": "Shop Candles",
+  "tn11d4bbff": "Protected Page",
+  "t642a3fac": "404 Page not found",
+  "t556d64d8": "The page you are looking for doesn't exist or has been moved",
+  "tn74bddc7e": "Back to Shop",
+  "t31": "1",
+  "tn54cb6016": "Customer Information",
+  "t3ff5b7c": "Email",
+  "tn35b49c7e": "Shipping Address",
+  "t12d3df93": "Shipping Method",
+  "tn175ec138": "Payment Info",
+  "t7df1": " / ",
+  "t789bff0f": "Billing Address",
+  "tn3eedfb0d": "Items in Order",
+  "tn77079b6c": "Order Summary",
+  "t4d3eb24": "Total",
+  "general": {
+    "accessibility": {
+      "unit_price_separator": "per"
+    },
+    "meta": {
+      "tags": "Tagged \"{{ tags }}\"",
+      "page": "Page {{ page }}"
+    },
+    "search": {
+      "no_results_html": "Your search for \"{{ terms }}\" did not yield any results.",
+      "results_with_count": {
+        "one": "{{ count }} result for \"{{ terms }}\"",
+        "other": "{{ count }} results for \"{{ terms }}\""
+      },
+      "heading": "Search our site",
+      "placeholder": "Search",
+      "submit": "Submit",
+      "close": "Close search"
+    }
+  }
+}
